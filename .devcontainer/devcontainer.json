@@ -1,0 +1,25 @@
+{
+  "name": "Samsung Tab Remote Desktop",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/chrome-browser:1": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts":,
+  "portsAttributes": {
+    "6080": {
+      "label": "Linux Desktop (noVNC)",
+      "onAutoForward": "openPreview",
+      "visibility": "private"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    }
+  }
+}
